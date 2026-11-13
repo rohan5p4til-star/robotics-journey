@@ -10,7 +10,8 @@ y = 10.0
 v = 0
 t = 0
 t_end = 10.0
-nsteps= int(t_end/dt)
+nsteps= round(t_end/dt)
+energy_loss = 0.8
 
 #store
 times = [t]
@@ -18,6 +19,9 @@ heights = [y]
 for step in range(1,nsteps+1):
     v = v + (g*dt)
     y = y + v * dt
+    if y < 0:
+        y = 0
+        v = (abs(v)*energy_loss)
     t= step * dt
     print(t, v, y)
     times.append(t)
