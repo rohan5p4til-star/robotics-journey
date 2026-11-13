@@ -10,4 +10,6 @@ Learning the full robotics stack: embedded → OS → ROS 2 → perception → c
 - Weeks 25–28: Capstone real robot
 
 ## Log
-- **Nov 13, 2026:** Set up git, SSH, GitHub. Made this repo.
+- **Nov 13, 2026:** Built 1D bouncing ball sim from scratch (01-BallSim). Learned:
+  Euler integration, integer step counter to avoid float drift, floor collision,
+  restitution. Bounce heights decay by e² (0.64) — matches physics.
