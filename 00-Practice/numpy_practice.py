@@ -4,11 +4,11 @@ import math
 # #arrays
 
 #  difference between numpy and python is that when we view b we get first three items in array a but when we change the first item into something else for b it also changes that value for array a as well
- a=np.array([1,2,3,4,5])
- b = a[:3]
- b[0] = 4
- print(a)
- print(b)
+a=np.array([1,2,3,4,5])
+b = a[:3]
+b[0] = 4
+print(a)
+print(b)
 
 #Two- and higher-dimensional arrays can be initialized from nested Python sequences:
 a1= np.array([[1,2,3],[1,2,3],[2,2,2]])
@@ -71,3 +71,36 @@ print(np.concatenate((y,z)))
 x1= np.array([[1, 2], [3, 4]])
 y1 = np.array([[5, 6]])
 print(np.concatenate((x1, y1)))
+
+#indexing and slicing
+data=np.array([1,2,3,4])
+print(data[2:])
+
+#we can also select certain parts of an array
+data1=np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+print(data1[data1<5])
+print(data1[data1%3==0])
+
+p = data1[(data1 > 2) & (data1 < 11)]
+print(p)
+
+#we can stack arrays horizontally or vertically
+a3 = np.array([[1, 1],
+               [2, 2]])
+a4 = np.array([[3, 3],
+               [4, 4]])
+acombov=np.vstack((a3,a4))
+print(acombov)
+acomboh=np.hstack((a3,a4))
+print(acomboh)
+
+#an array can be split
+a3split=np.split(a3,2)
+print(a3split)
+
+#
+n=np.array([[[1,2,3,4],[1,2,3,4],[4,3,2,1]]])
+n1=n[0, :]
+n1[0]=2
+print(n1)
+print(n)

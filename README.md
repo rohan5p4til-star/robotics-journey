@@ -13,3 +13,4 @@ Learning the full robotics stack: embedded → OS → ROS 2 → perception → c
 - **Nov 13, 2026:** Built 1D bouncing ball sim from scratch (01-BallSim). Learned:
   Euler integration, integer step counter to avoid float drift, floor collision,
   restitution. Bounce heights decay by e² (0.64) — matches physics.
+- **Nov 14, 2026:** NumPy basics (00-Practice): zeros/ones/empty, arange vs linspace (fencepost problem), ndim/shape/size/dtype, views vs copies, sort, concatenate + axis.
