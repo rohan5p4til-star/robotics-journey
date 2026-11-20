@@ -14,3 +14,4 @@ Learning the full robotics stack: embedded → OS → ROS 2 → perception → c
   Euler integration, integer step counter to avoid float drift, floor collision,
   restitution. Bounce heights decay by e² (0.64) — matches physics.
 - **Nov 14, 2026:** NumPy basics (00-Practice): zeros/ones/empty, arange vs linspace (fencepost problem), ndim/shape/size/dtype, views vs copies, sort, concatenate + axis.
+- **Nov 20, 2026:** Built 2D bouncing ball sim (01-BallSim/ball_2d.py): projectile motion with independent x/y (vx constant, gravity only on vy), floor bounce reflects only vy. Plotted the path (distance vs height). Verified first impact at t ≈ 1.43 s, x ≈ 2.86 m, matching √(2h/g).
